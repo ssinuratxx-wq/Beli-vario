@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabungan Vario 125</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header class="header">
+            <p class="label">TARGET IMPIAN</p>
+            <h1>Vario 125</h1>
+            <p class="target">Rp20.000.000</p>
+        </header>
+
+        <section class="card">
+            <p class="card-title">Tabungan Saya</p>
+
+            <h2 id="saldo">Rp0</h2>
+
+            <div class="progress-container">
+                <div class="progress-bar" id="progress"></div>
+            </div>
+
+            <div class="progress-info">
+                <span id="persentase">0%</span>
+                <span>Rp20.000.000</span>
+            </div>
+        </section>
+
+        <section class="stats">
+
+            <div class="stat-card">
+                <p>Target Mingguan</p>
+                <strong>Rp350.000</strong>
+            </div>
+
+            <div class="stat-card">
+                <p>Sisa Target</p>
+                <strong id="sisa">Rp20.000.000</strong>
+            </div>
+
+        </section>
+
+        <section class="action">
+
+            <h3>Tambah Tabungan</h3>
+
+            <input
+                type="number"
+                id="jumlah"
+                placeholder="Masukkan jumlah"
+                min="1"
+            >
+
+            <button onclick="tambahTabungan()">
+                Tambah Tabungan
+            </button>
+
+        </section>
+
+        <section class="motivation">
+            <p>Sedikit demi sedikit, target Vario makin dekat.</p>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
